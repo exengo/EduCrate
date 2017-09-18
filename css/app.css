@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "Quicksand Light";
+    src: url("../assets/fonts/Quicksand-Light.otf");
+}
+@font-face {
+    font-family: "Quicksand";
+    src: url("../assets/fonts/Quicksand-Regular.otf");
+}
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../assets/fonts/BebasNeue.otf");
+}
+
+html, body, main {
+    min-height: 100vh;
+    background-color: #68ABCF;
+    overflow-y: auto !important;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+p, button {
+    font-family: "Quicksand";
+}
+a {
+    font-family: "Quicksand Light";
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bebas Neue";
+}
+body {
+    overflow: hidden;
+}
+header {
+    padding: 20px 0 20px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: white;
+}
+input {
+    border-radius: 0 !important;
+}
+
+
+
+.highlighttext {
+    text-align: center !important;
+    font-size: 14pt;
+}
+.card {
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#home .card img {
+    width: 100%;
+    height: auto;
+}
+.card h1 {
+    text-align: center;
+}
+.card p {
+    text-align: justify;
+}
+.card a {
+    color: black;
+}
+.card .card-divider, .card .card-section {
+    background-color: white;
+}
+.mobile-text {
+    margin-top: 40px;
+}
+.logo {
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: bicubic;
+}
+.desktopcards {
+    margin-top: 50px;
+}
+.desktopcards .card {
+    padding: 0;
+}
+
+
+
+.cardicon {
+    width: 60%;
+    margin-left: 20%;
+    height: auto;
+}
+#pages-nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+#pages-nav button {
+    text-align: center;
+    border: 1px solid black;
+    font-size: 12pt;
+    border-radius: 0;
+    height: 40px;
+    background-color: white;
+}
+#mobileheading, #desktopheading h1 {
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#text {
+    width: 90vw;
+}
+#text div {
+    margin: 0 40px;
+}
+#mailfail, #mailsuccess {
+    display: none;
+}
+
+
+
+#products h1, #products h3  {
+    text-align: center;
+}
+#products .card {
+    margin-bottom: 60px;
+}
+#emailinput {
+    height: 40px;
+}
+.profileimg {
+    width: 50%;
+    display: inline;
+    margin-top: 5px;
+}
+
+
+
+/*Text sizing and object positioning for the home page on mobile*/
+#mobileheading #line1 {
+    font-size: 86pt;
+}
+#mobileheading #line2 {
+    position: relative;
+    top: -45px;
+    font-size: 40pt;
+}
+#mobileheading #line3 {
+    font-size: 105pt;
+    top: -90px;
+    position: relative;
+}
+#mobilecards {
+    margin-bottom: 40px;
+    position: relative;
+    top: -80px;
+}
+#mobilecards .card {
+    margin-bottom: 80px;
+}
+/*Same as above for desktop*/
+#desktopheading #line1 {
+     font-size: 9.3vw;
+    margin-top: -30px;
+}
+#desktopheading #line2 {
+    position: relative;
+    top: -4vw;
+    font-size: 4.4vw;
+}
+#desktopheading #line3 {
+    top: -8.3vw;
+    font-size: 11.6vw;
+    position: relative;
+}
+
+
+
+/*Menu for larger screens*/
+#menu {
+    margin-top: 10px;
+}
+#menu li {
+    margin-left: 20px;
+}
+#menu li a {
+    padding-left: 0 !important;
+    color: black;
+    font-size: 2.5vw;
+    user-select: none;
+}
+#menu li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > div {
+    float:left;
+    width:100%;
+    position: relative;
+}
+
+@media screen and (orientation: portrait) {
+    #desktopcards {
+        display: none;
+    }
+}
