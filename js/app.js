@@ -2,12 +2,17 @@ $(document).ready(function () {
     let setup = $("#button1");
     setup.css("background-color", "black");
     setup.css("color", "white");
+    for(let i = 2; i < 5; i++){
+        let unactive = $(`#button${i}`);
+        unactive.css("background-color", "white");
+        unactive.css("color", "black");
+    }
     $("#link1").css("text-decoration", "underline");
     window.mySwipe = Swipe(document.getElementById('slider'), {
         auto: 0,
         continuous: false,
         callback: function (index) {
-            for(let i = 1; i < 4; i++){
+            for(let i = 1; i < 5; i++){
                 if(i !== index+1){
                     let unactive = $(`#button${i}`);
                     unactive.css("background-color", "white");
@@ -28,20 +33,18 @@ $(document).ready(function () {
     });
 });
 
-function get_mail() {
-    $("#mailsuccess").css("display", "none");
-    $("#mailfail").css("display", "none");
-    let mail = $("#emailinput").val();
+function login() {
+    let code = $("#login_id").val();
     $.ajax({
-        url: "get_mail.php",
+        url: "login.php",
         type: "POST",
-        data: {mail: mail},
+        data: {login: code},
         cache: false,
         success: function (response) {
             if(response) {
-                $("#mailsuccess").css("display", "block")
+                $("#login_error").css("display", "none")
             } else {
-                $("#mailfail").css("display", "block")
+                $("#login_error").css("display", "block")
             }
         }
     });

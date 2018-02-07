@@ -7,6 +7,7 @@
     <title>EduCrate - Lär dig skapa vad som helst</title>
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
     <link rel="stylesheet" href="css/foundation.min.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
 <header>
@@ -19,9 +20,10 @@
         </div>
         <nav class="shrink columns align-self-middle">
             <ul class="menu" id="menu">
-                <li><a onclick="mySwipe.slide(0, 400)" id="link1">Hem</a></li>
-                <li><a onclick="mySwipe.slide(1, 400)" id="link2">EduCrate</a></li>
-                <li><a onclick="mySwipe.slide(2, 400)" id="link3">Om oss</a></li>
+                <li><a href="javascript:mySwipe.slide(0, 400)" id="link1">Hem</a></li>
+                <li><a href="javascript:mySwipe.slide(1, 400)" id="link2">EduCrate</a></li>
+                <li><a href="javascript:mySwipe.slide(2, 400)" id="link3">Om oss</a></li>
+                <li><a href="javascript:mySwipe.slide(3, 400)" id="link4">Logga in</a></li>
             </ul>
         </nav>
     </div>
@@ -38,21 +40,22 @@
                     </div>
                     <div class="row small-10 align-spaced medium-unstack" id="mobilecards">
                         <div class="card medium-5 columns">
-                            <a onclick="mySwipe.slide(2, 400)">
+                            <a href="javascript:mySwipe.slide(2, 400)">
                                 <div class="card-divider">
                                     <h1>Vilka är vi?</h1>
                                 </div>
                                 <img src="assets/img/educrate05-compressor.jpg">
                                 <div class="card-section">
                                     <p>Vi är två elever från Bodens teknikprogram som tack vare UngDrive
-                                        initiativet har fått möjlighet att starta EduCrate. Till höger är Mikael
+                                        initiativet har fått möjlighet att starta EduCrate som vi nu driver vidare som
+                                        undomgsföretaget Educrate UF. Till höger är Mikael
                                         Eriksson och till vänster är Karl Olsson-Lalor.</p>
                                     <p class="highlighttext"><b>Klicka här för att läsa mer om oss!</b></p>
                                 </div>
                             </a>
                         </div>
                         <div class="card medium-5 columns">
-                            <a onclick="mySwipe.slide(1, 400)">
+                            <a href="javascript:mySwipe.slide(1, 400)">
                                 <div class="card-divider">
                                     <h1>Vad gör vi?</h1>
                                 </div>
@@ -61,8 +64,14 @@
                                     <p>Har du någonsin funderat över hur fjärrkontrollen till din TV fungerar? Eller
                                         hur man gör sin egen datormus? Teknik finns överallt i våra liv, men inte
                                         många vet hur den fungerar.</p>
-                                    <p class="highlighttext"><b>Det vill vi ändra på!</b></p><p>Vi har tagit fram EduCrate
-                                        lådan för att vem som helst ska kunna lära sig att skapa vad som helst.</p>
+                                    <p class="highlighttext"><b>Det vill vi ändra på!</b></p>
+                                    <p>
+                                        Vi i EduCrate UF har tagit fram en låda som är smockfylld med teknik,
+                                        instruktioner och hjälpmedel för att lära vem som helst skapa vad som helst!
+                                        <br><br>
+                                        Till skolor som vill ge sina elever en unik möjlighet att jobba praktiskt med
+                                        programmering erbjuder vi även undervisning och lådor till ett rabatterat pris!
+                                    </p>
                                     <p class="highlighttext"><b>Klicka här för att läsa mer om EduCrate!</b></p>
                                 </div>
                             </a>
@@ -71,7 +80,7 @@
                 </div>
                 <div class="show-for-medium hide-for-small hide-for-portrait row align-center medium-12 desktopcards">
                     <div class="card medium-3 columns">
-                        <a onclick="mySwipe.slide(2, 400)">
+                        <a href="javascript:mySwipe.slide(2, 400)">
                             <div class="card-divider">
                                 <h1>Vilka är vi?</h1>
                             </div>
@@ -90,7 +99,7 @@
                         <h1 id="line3">HELST</h1>
                     </div>
                     <div class="card medium-3 columns">
-                        <a onclick="mySwipe.slide(1, 400)">
+                        <a href="javascript:mySwipe.slide(1, 400)">
                             <div class="card-divider">
                                 <h1>Vad gör vi?</h1>
                             </div>
@@ -99,8 +108,12 @@
                                 <p>Har du någonsin funderat över hur fjärrkontrollen till din TV fungerar? Eller hur
                                     man gör sin egen datormus? Teknik finns överallt i våra liv, men inte många vet
                                     hur den fungerar. </p>
-                                <p class="highlighttext"><b>Det vill vi ändra på!</b></p><p>Vi har tagit fram EduCrate
-                                    lådan för att vem som helst ska kunna lära sig att skapa vad som helst.</p>
+                                <p class="highlighttext"><b>Det vill vi ändra på!</b></p>
+                                <p>Vi i EduCrate UF har tagit fram en låda som är smockfylld med teknik,
+                                    instruktioner och hjälpmedel för att lära vem som helst skapa vad som helst!
+                                   <br><br>
+                                    Till skolor som vill ge sina elever en unik möjlighet att jobba praktiskt med
+                                    programmering erbjuder vi även undervisning och lådor till ett rabatterat pris!</p>
                                 <p class="highlighttext"><b>Klicka här för att läsa mer om EduCrate!</b></p>
                             </div>
                         </a>
@@ -132,29 +145,19 @@
                             i lådan är tillexempel att bygga sin egna TV fjärrkontroll.</p>
                     </div>
                 </div>
-                <div class="card small-10 medium-10 large-3 columns desktopcards">
-                    <div class="card-divider">
-                        <h1>Kommer snart!</h1>
-                    </div>
-                    <img src="assets/img/email.png" class="cardicon">
-                    <div class="card-section">
-                        <p>Vi håller just nu på att utveckla EduCrate lådan och hoppas att den kommer att vara klar
-                            inom kort! Under tiden kan ni anmäla intresse genom att skriva in er email adress här:</p>
-                        <form class="input-group">
-                            <input placeholder="Mail adress" class="input-group-field" type="email" id="emailinput" name="email">
-                            <div class="input-group-button">
-                                <input type="button" class="button" onclick="get_mail();" value="Skicka">
-                            </div>
-                        </form>
-                        <div class="callout small alert" id="mailfail">
-                            <p>Ogiltig email adress. Försök igen.</p>
+                <div class="row small-12 columns">
+                    <div class="card small-10 medium-10 large-8 columns small-offset-1 large-offset-2 desktopcards">
+                        <div class="card-divider">
+                            <h1>Köp din låda idag!</h1>
                         </div>
-                        <div class="callout small success" id="mailsuccess">
-                            <p>Du kommer nu få mail när lådan släpps!</p>
+                        <div class="card-section">
+                            <p>
+                                För att beställa din helt egna EduCrate-låda skicka ett mejl till support@educrate.se för
+                                mer information om bland annat hur lång tid det kommer att ta tills den levereras.
+                                Leveranstiden är generellt sätt 3-5 arbetsdagar men på grund av den höga efterfrågan på
+                                våra lådor kan den öka till uppemot 2 månader i väldigt sällsynta fall.
+                            </p>
                         </div>
-                        <p>Vi kommer att kontakta er när lådan blir tillgänglig. Till en början kommer det endast
-                            finnas ett begränsat antal lådor som i första hand kommer att säljas till de som anmält
-                            intresse.</p>
                     </div>
                 </div>
             </div>
@@ -172,13 +175,15 @@
                                 kunskaper av att göra egna hemsidor och programmeringsprojekt, det är bland det
                                 roligaste jag vet. Därför vill jag att fler ska kunna prova på att själva bygga med
                                 elektronik och att programmera. Det var från det som jag fick idéen att göra EduCrate
-                                lådan.<br><br>Tyvärr är jag näst intill rikskass när det kommer till att göra illustrationer,
+                                lådan.
+                                <br><br>
+                                Tyvärr är jag näst intill rikskass när det kommer till att göra illustrationer,
                                 bilder och dylikt. Därför frågade jag min gode vän Karl om han ville hjälpa till med
                                 att starta detta företag. Efter mycket planering, förberedelser och finslipning av
                                 detaljer står vi nu här idag, snart redo att lansera EduCrate lådan som vi har jobbat
                                 hårt med.
                                 <br><br>
-                                Jag kan nås på mikael.eriksson@educrate.win
+                                Jag kan nås på mikael.eriksson@educrate.se
                             </p>
                         </div>
                     </div>
@@ -195,7 +200,9 @@
                                 bli rik. Planen var att gå teknik läsa någon fysikkurs och lösa något svårt problem som
                                 till exempel millenieproblemen eller något liknande. När jag senare började på teknikprogrammet
                                 i Boden och läste lite matematik, fysik och andra ämnen insåg jag att dessa problem
-                                var olösta av en anledning.<br><br>Jag kände att jag antingen skulle behöva ägna hela livet åt
+                                var olösta av en anledning.
+                                <br><br>
+                                Jag kände att jag antingen skulle behöva ägna hela livet åt
                                 problemen eller bara göra något helt annat. Detta ledde till att jag helt bytte plan
                                 till att satsa riktigt ordentligt på de UF företag vi skulle starta nästa år och i
                                 samband med detta kom Mikael till mig med en bra idé om vad vi skulle kunna göra.
@@ -204,17 +211,38 @@
                                 och hoppas att vi ska vara det du behöver för att lära dig skapa vad som helst från
                                 ingenting.
                                 <br><br>
-                                Jag kan nås på karl.olsson-lalor@educrate.win
+                                Jag kan nås på karl.olsson-lalor@educrate.se
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page row small-12 align-center" id="login">
+                <div class="row card small-8 medium-4 columns align-center desktopcards" id="login_card">
+                    <div class="card-divider">
+                        <h1>Logga in</h1>
+                    </div>
+                    <div class="small-12 columns card-sectiond">
+                        <p>Om du redan har köpt en låda och vill komma åt instruktionerna kan du logga in här med koden
+                        som följde med i din låda.</p>
+                        <form class="input-group">
+                            <label for="login_id"></label><input type="number" name="login_id" id="login_id">
+                            <div class="input-group-button">
+                                <input type="button" class="button" onclick="login();" value="Logga in">
+                            </div>
+                        </form>
+                        <div class="callout alert" id="login_error">
+                            <h3>Felaktig kod. Försök igen.</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <nav class="row show-for-small-only" id="pages-nav">
-            <button class="small-4 columns" onclick="mySwipe.slide(0, 400)" id="button1">Hem</button>
-            <button class="small-4 columns" onclick="mySwipe.slide(1, 400)" id="button2">EduCrate</button>
-            <button class="small-4 columns" onclick="mySwipe.slide(2, 400)" id="button3">Om oss</button>
+            <a class="small-3 columns" href="javascript:mySwipe.slide(0, 400)" id="button1">Hem</a>
+            <a class="small-3 columns" href="javascript:mySwipe.slide(1, 400)" id="button2">EduCrate</a>
+            <a class="small-3 columns" href="javascript:mySwipe.slide(2, 400)" id="button3">Om oss</a>
+            <a class="small-3 columns" href="javascript:mySwipe.slide(3, 400)" id="button4">Logga in</a>
         </nav>
     </div>
 </main>
@@ -224,12 +252,12 @@
 <script type="application/ld+json">
 {
   "@type": "ItemList",
-  "url": "https://educrate.win",
+  "url": "https://educrate.se",
   "numberOfItems": "1",
   "itemListElement": [{
       "@type": "Product",
       "image": "https://educrate.win/assets/img/Arduino-Temp0001.png",
-      "url": "https://educrate.win",
+      "url": "https://educrate.se",
       "name": "EduCrate"
     }]
 }

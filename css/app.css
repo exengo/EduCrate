@@ -94,12 +94,12 @@ input {
     position: fixed;
     bottom: 0;
 }
-#pages-nav button {
+#pages-nav a {
     text-align: center;
     border: 1px solid black;
     font-size: 12pt;
     border-radius: 0;
-    height: 40px;
+    height: 80px;
     background-color: white;
 }
 #mobileheading, #desktopheading h1 {
@@ -194,6 +194,17 @@ input {
 }
 
 
+#login_id {
+    text-align: center;
+    width: 60%;
+    margin-left: 10%;
+    font-size: 18pt;
+}
+
+#login_error {
+    text-align: center;
+    display: none;
+}
 
 .swipe {
     overflow: hidden;
